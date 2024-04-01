@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "postgres-demo-app"
+  description: 
+  annotations:
+    github.com/project-slug: /postgres-demo-app
+    argocd/app-name: postgres-demo-app
+  links:
+    - url: https://postgres-demo-app.onexidp.com
+      title: Web Application
+      icon: LaunchIcon
+spec:
+  type: service
+  owner: guests
+  lifecycle: experimental
